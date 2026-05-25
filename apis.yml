@@ -1,0 +1,166 @@
+aid: fountain-tech
+name: Fountain
+description: >-
+  Fountain is an AI-powered frontline workforce platform that helps
+  high-volume employers source, screen, hire, onboard, schedule, and
+  retain hourly workers across quick-service restaurants, retail,
+  logistics, hospitality, healthcare, manufacturing, grocery, and
+  franchise operations. The integrated product suite spans an
+  applicant tracking system, candidate CRM, agentic sourcing
+  ("Source"), digital onboarding with document collection and
+  background-check integrations, shift and scheduling for active
+  workers, and an orchestration layer called Cue that automates
+  workflows across all products. AI agents Anna (recruiter
+  screening), Emma (24/7 candidate support), and Sam (employee
+  engagement) sit across the funnel and the post-hire workforce.
+  Fountain exposes a versioned REST API at developer.fountain.com
+  covering the Hire API (applicants, funnels/openings, stages,
+  calendar slots, labels, custom exports, webhooks) and the
+  post-hire Worker API (worker profiles, employment records,
+  document submissions, I-9 verification, attendance, shifts,
+  demands, breaks, and holidays), with authentication via the
+  X-ACCESS-TOKEN header on per-tenant base URLs or OAuth 2.0 through
+  the unified services.fountain.com hire service base URL for
+  partner integrations.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Hiring
+  - Recruiting
+  - Onboarding
+  - Applicant Tracking
+  - Workforce Management
+  - Hourly Workers
+  - Frontline
+  - Shift Management
+  - Scheduling
+  - Background Checks
+  - I-9 Verification
+  - Webhooks
+  - HRIS
+  - Talent Acquisition
+  - AI Agents
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/fountain-tech/refs/heads/main/apis.yml
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.19'
+apis:
+  - aid: fountain-tech:hire-api
+    name: Fountain Hire API v2
+    description: >-
+      REST API for the Fountain Hire product, covering applicants
+      (create, retrieve, update, delete, list, latest applicant,
+      duplicate detection, notes, labels, file uploads, transitions,
+      bulk advance, bulk transitions, bulk notifications),
+      funnels/openings (create, list, update, delete, stages,
+      workflow reassignment, company-attribute assignment), calendar
+      and interview scheduling (available slots, booked slots,
+      session updates and cancellations), locations and location
+      groups, positions, hiring goals, data keys, option banks,
+      company attributes and attribute sets, custom exports, user
+      management and activity logs, and webhook settings.
+      Authentication is via the X-ACCESS-TOKEN request header using
+      tenant API keys created under Developer Settings, or via
+      OAuth 2.0 against the shared service hire base URL for partner
+      integrations.
+    humanURL: https://developer.fountain.com/reference/hire-api-overview
+    baseURL: https://services.fountain.com/api/servicehire/v2
+    tags:
+      - Applicants
+      - Funnels
+      - Openings
+      - Stages
+      - Calendar
+      - Interview Scheduling
+      - Locations
+      - Hiring Goals
+      - Labels
+      - Custom Exports
+      - Webhooks
+      - Custom Integrations
+    properties:
+      - type: Documentation
+        url: https://developer.fountain.com/docs
+      - type: APIReference
+        url: https://developer.fountain.com/reference/overview
+      - type: Authentication
+        url: https://developer.fountain.com/reference/wx-authentication
+      - type: RateLimits
+        url: https://developer.fountain.com/reference/rate-limits
+      - type: Webhooks
+        url: https://developer.fountain.com/reference/webhook-settings
+      - type: CustomIntegrations
+        url: https://developer.fountain.com/reference/custom-integrations
+      - type: LLMsTxt
+        url: https://developer.fountain.com/llms.txt
+  - aid: fountain-tech:worker-api
+    name: Fountain Worker API
+    description: >-
+      Post-hire REST API covering worker profiles (activation and
+      deactivation), employment records, document submissions, I-9
+      verification processing, attendance, shift creation and
+      assignment, demands, allowances, breaks, holidays, audience
+      and workforce management, and brand management. Shares the
+      Fountain developer portal authentication model
+      (X-ACCESS-TOKEN header or OAuth) and is intended to keep HRIS,
+      payroll, scheduling, and engagement systems in sync with the
+      active hourly workforce managed in Fountain.
+    humanURL: https://developer.fountain.com/reference/overview
+    baseURL: https://services.fountain.com/api/servicehire/v2
+    tags:
+      - Workers
+      - Employment Records
+      - Onboarding
+      - I-9 Verification
+      - Document Submissions
+      - Attendance
+      - Shifts
+      - Scheduling
+      - Demands
+      - Holidays
+      - HRIS Sync
+    properties:
+      - type: Documentation
+        url: https://developer.fountain.com/docs
+      - type: APIReference
+        url: https://developer.fountain.com/reference/overview
+      - type: Authentication
+        url: https://developer.fountain.com/reference/wx-authentication
+
+common:
+  - type: Website
+    url: https://www.fountain.com
+  - type: Documentation
+    url: https://developer.fountain.com/docs
+  - type: APIReference
+    url: https://developer.fountain.com/reference/overview
+  - type: Authentication
+    url: https://developer.fountain.com/reference/wx-authentication
+  - type: LLMsTxt
+    url: https://developer.fountain.com/llms.txt
+  - type: PartnerPortal
+    url: https://partners.fountain.com
+  - type: StatusPage
+    url: https://status.fountain.com/
+  - type: Support
+    url: https://support.fountain.com/en/
+  - type: TrustCenter
+    url: https://trust.fountain.com/
+  - type: Pricing
+    url: https://www.fountain.com/pricing
+  - type: Login
+    url: https://app.fountain.com/users/sign_in
+  - type: Blog
+    url: https://www.fountain.com/blog
+  - type: Customers
+    url: https://www.fountain.com/customers
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/fountain-inc
+  - type: Twitter
+    url: https://twitter.com/FountainInc
+  - type: CrunchBase
+    url: https://www.crunchbase.com/organization/fountain-3
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

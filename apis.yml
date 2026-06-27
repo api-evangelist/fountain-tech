@@ -92,7 +92,7 @@ apis:
         url: https://developer.fountain.com/reference/webhook-settings
       - type: CustomIntegrations
         url: https://developer.fountain.com/reference/custom-integrations
-      - type: LLMsTxt
+      - type: LlmsText
         url: https://developer.fountain.com/llms.txt
   - aid: fountain-tech:worker-api
     name: Fountain Worker API
@@ -137,7 +137,7 @@ common:
     url: https://developer.fountain.com/reference/overview
   - type: Authentication
     url: https://developer.fountain.com/reference/wx-authentication
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://developer.fountain.com/llms.txt
   - type: PartnerPortal
     url: https://partners.fountain.com

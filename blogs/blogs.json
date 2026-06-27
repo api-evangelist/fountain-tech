@@ -3,19 +3,12 @@
   "feeds": [
     {
       "source": "https://www.fountain.com/blog",
-      "feed_url": "https://www.fountain.com/blog",
-      "title": "",
+      "feed_url": "",
       "saved": 0,
-      "method": "none"
-    },
-    {
-      "source": "https://app.fountain.com/users/sign_in",
-      "feed_url": "https://app.fountain.com/users/sign_in",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "method": "agent-scrape"
     }
   ],
-  "post_count": 4,
-  "fetched": "2026-06-14T20:42:17Z"
+  "post_count": 6,
+  "fetched": "2026-06-27T12:42:46Z",
+  "agent_pulled": "2026-06-27"
 }

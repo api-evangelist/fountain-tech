@@ -129,6 +129,10 @@ apis:
         url: https://developer.fountain.com/reference/wx-authentication
 
 common:
+  - type: VulnerabilityDisclosure
+    url: security/fountain-tech-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/fountain-tech-domain-security.yml
   - type: Website
     url: https://www.fountain.com
   - type: Documentation

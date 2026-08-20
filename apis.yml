@@ -47,6 +47,22 @@ tags:
   - Scheduling
   - Background Checks
   - I-9 Verification
+  - Webhook
+  - HRIS
+  - Talent Acquisition
+  - AI Agents
+tags_raw:
+  - Hiring
+  - Recruiting
+  - Onboarding
+  - Applicant Tracking
+  - Workforce Management
+  - Hourly Workers
+  - Frontline
+  - Shift Management
+  - Scheduling
+  - Background Checks
+  - I-9 Verification
   - Webhooks
   - HRIS
   - Talent Acquisition
@@ -78,6 +94,19 @@ apis:
     humanURL: https://developer.fountain.com/reference/hire-api-overview
     baseURL: https://services.fountain.com/api/servicehire/v2
     tags:
+      - Applicants
+      - Funnels
+      - Openings
+      - Stages
+      - Calendar
+      - Interview Scheduling
+      - Locations
+      - Hiring Goals
+      - Labels
+      - Custom Exports
+      - Webhook
+      - Custom Integrations
+    tags_raw:
       - Applicants
       - Funnels
       - Openings
